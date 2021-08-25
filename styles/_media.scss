@@ -1,0 +1,26 @@
+@import './variables';
+
+@media (min-width: 801px) {
+  $h1: 3.5em;
+  $h2: 2em;
+  $h3: 1.8em;
+  $p: 1em;
+
+  h1 {
+    font-size: $h1;
+  }
+  h2 {
+    font-size: $h2;
+  }
+  h3 {
+    font-size: $h3;
+  }
+  p {
+    font-size: $p;
+  }
+
+  .btn {
+    font-size: $p;
+  }
+}
+

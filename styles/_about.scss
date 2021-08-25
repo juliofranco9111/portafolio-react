@@ -1,0 +1,17 @@
+@import './variables';
+
+ul.list-langs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-center;
+  flex-wrap: wrap;
+  gap: 	10px;
+  margin-top: 20px;
+  li{
+      width: 1fr;
+      border: 1px solid var(--font-color);
+      text-align: center;
+      padding: 5px;
+      font-size: $p;
+  }
+}

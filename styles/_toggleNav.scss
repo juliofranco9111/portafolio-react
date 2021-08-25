@@ -1,0 +1,17 @@
+#toggle {
+  position: fixed;
+  color: var(--font-color);
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  font-size: 2.5em;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: 800px) {
+  #toggle {
+    display: none;
+  }
+}

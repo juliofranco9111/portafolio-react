@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  
+  #nav{
+    .container{
+
+      justify-content: center;
+      text-align: center;
+
+      ul{
+        li{
+          a{
+            font-size: $h1;
+            font-weight: 300;
+          }
+        }
+      }
+
+    }
+  }
+
+  
+}
+
+
