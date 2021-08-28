@@ -85,4 +85,43 @@ export const projects = [
     link: 'https://quizzcapital.vercel.app/',
     repo: 'https://github.com/juliofranco9111/ReactCapitalQuizz',
   },
+  {
+    title: 'Salva - administrá tus gastos',
+    subtitle: 'SPA realizada con Angular usando Firebase como backend',
+    keys: [
+      'Angular',
+      'TypeScript',
+      'Firebase',
+      'Bootstrap',
+      'GoogleAuth',
+      'Serverless',
+    ],
+    desc: 'Permite administrar y separar los ingresos y gastos mensuales por categorías además de ver el balance en tiempo real de los movimientos. Diseñé el logo y nombre para el proyecto, CRUD completo por cada movimiento y categorías, instrucciones de uso integradas, login basado en el sistema de autenticación de Firebase (email y cuenta de Google). Diseño adaptable (responsive).',
+    link: 'https://gastos-app-d4c8f.firebaseapp.com/',
+    repo: 'https://github.com/juliofranco9111/gastosApp',
+  },
 ];
+
+export const getProjectsFilter = (term) => {
+  if (term) {
+    let projectsArray = [];
+
+    projects.filter((p) => {
+      if (p.title.toLowerCase().match(term.toLowerCase())) {
+        projectsArray.push(p);
+        return p;
+      } else {
+        for (let i = 0; i < p.keys.length; i++) {
+          if (p.keys[i].toLowerCase().match(term.toLowerCase())) {
+            projectsArray.push(p);
+            return;
+          }
+        }
+      }
+    });
+
+    return projectsArray;
+  } else {
+    return projects;
+  }
+};

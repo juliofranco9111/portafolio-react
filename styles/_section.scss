@@ -11,37 +11,50 @@ section {
 }
 
 #projects {
-  input[type='text'] {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--bg-color);
-    border: 1px solid var(--font-color);
-    font-size: $h2;
-    margin-bottom: 20px;
-  }
+  min-height: 1vh;
 
+  .form-container {
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 70%;
+    top: 0px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    transition:background-color 300ms;
+    
+    input[type='text'] {
+      width: 100%;
+      padding: 10px;
+      background-color: var(--bg-color);
+      border: 1px solid var(--font-color);
+      font-size: $h2;
+      color: var(--font-color);
+      transition:background-color 300ms;
+    }
+  }
+  
   h2 {
     margin-top: 20px;
     font-weight: 600;
   }
-
+  
   h3 {
     font-weight: 400;
     margin-bottom: 10px;
   }
-
+  
   .project-tags {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     
-    
     li {
       width: auto;
       .project-tag {
         font-size: $h2;
-
       }
     }
   }
@@ -50,7 +63,7 @@ section {
 #contact {
   .img-container {
     width: 100%;
-    max-width: 130px;
+    max-width: 100px;
     margin: 0 auto;
     border-radius: 999px;
     overflow: hidden;
@@ -60,11 +73,12 @@ section {
       padding-bottom: 10px;
       padding-top: 10px;
       height: auto;
+      transition: filter 300ms;
       margin: 0 auto;
-      filter: brightness(90%);
+      filter: var(--filter);
     }
   }
-
+  
   .urls-contact {
     a {
       padding: 3px;
@@ -76,6 +90,19 @@ section {
 }
 
 @media (min-width: 800px) {
+  #projects {
+    margin-top: 60px;
+    .form-container {
+      top: 60px;
+      width: 95%;
+      max-width: 1200px;
+      input[type='text'] {
+        width: 100%;
+      }
+    }
+  }
+
+
   #contact {
     height: auto;
     display: flex;

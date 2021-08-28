@@ -12,47 +12,43 @@ $h3: 1.2em;
 $p: 1em;
 
 :root {
-    --bg-color: #171923;
-    --bg-nav: #171923ee;
-    --bg-light: #232535;
-    --font-color: white;
-    --font-light: #ffffff;
-
-    
-}
-
-.lightMode {
   --bg-color: #ffffff;
   --bg-nav: #ffffffbe;
   --bg-light: #f8f8f8;
-  --font-color: #3D3D3D;
+  --font-color: #3d3d3d;
   --font-light: #202020;
+  --filter: brightness(105%);
 }
 
+.lightMode {
+  --bg-color: #171923;
+  --bg-nav: #171923ee;
+  --bg-light: #232535;
+  --font-color: white;
+  --font-light: #ffffff;
+  --filter: brightness(90%);
+}
 
-
-@media (min-width: 801px){
- 
+@media (min-width: 801px) {
   $h1: 3.5em;
   $h2: 2em;
   $h3: 1.8em;
   $p: 1.5em;
 
-  h1{
+  h1 {
     font-size: $h1;
   }
-  h2{
+  h2 {
     font-size: $h2;
   }
-  h3{
+  h3 {
     font-size: $h3;
   }
-  p{
+  p {
     font-size: $p;
   }
- 
-  .btn{
-    font-size: $p;
-  }
-};
 
+  .btn {
+    font-size: $p;
+  }
+} ;

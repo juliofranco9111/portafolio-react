@@ -3,8 +3,9 @@ import Img from 'next/image';
 import { contactData } from '../database/database';
 import foto from '../public/foto.png';
 
-
 export default function Home() {
+  
+
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ export default function Home() {
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'
           integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=='
           crossOrigin='anonymous'
-          referrerpolicy='no-referrer'></link>
+          referrerPolicy='no-referrer'></link>
       </Head>
 
       <section id='contact'>
@@ -35,14 +36,16 @@ export default function Home() {
               (Argentina). Desarrollo sitios y aplicaciones web (SPA). Buen
               gusto para el diseño y la funcionalidad
             </p>
-            <p className="urls-contact">
-              {contactData.map(e => <a key={e.text} target="blank" href={e.url}>{e.text}</a>)}
-             
+            <p className='urls-contact'>
+              {contactData.map((e) => (
+                <a key={e.text} target='blank' href={e.url}>
+                  {e.text}
+                </a>
+              ))}
             </p>
           </div>
         </div>
       </section>
-
     </>
   );
 }
