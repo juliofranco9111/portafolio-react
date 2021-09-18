@@ -13,12 +13,6 @@ export default function Home() {
           content='Portfolio FullStack developer - Julio Franco'
         />
         <link rel='icon' href='/favicon.ico' />
-        <link
-          rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'
-          integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=='
-          crossOrigin='anonymous'
-          referrerPolicy='no-referrer'></link>
       </Head>
 
       <section id='contact'>
@@ -34,7 +28,7 @@ export default function Home() {
               (Argentina). Desarrollo sitios y aplicaciones web (SPA). Buen
               gusto para el diseño y la funcionalidad
             </p>
-            <br/>
+            <br />
             <p className='urls-contact'>
               {contactData.map((e) => (
                 <a key={e.text} target='blank' href={e.url}>
