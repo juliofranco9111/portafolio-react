@@ -26,7 +26,7 @@ export default function Home() {
             <p className='mb-1'>
               Soy desarrollador de Javascript, resido en Buenos Aires
               (Argentina). Desarrollo sitios y aplicaciones web (SPA). Buen
-              gusto para el diseño y la funcionalidad
+              gusto para el diseño y la funcionalidad.
             </p>
             <br />
             <p className='urls-contact'>
