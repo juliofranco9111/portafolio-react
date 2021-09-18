@@ -55,7 +55,7 @@ export const stack = [
   'Dart',
   'Figma',
   'Illustrator',
-  'Framer'
+  'Framer',
 ];
 
 export const projects = [
@@ -69,20 +69,20 @@ export const projects = [
         repo: ''
 
     } */
-    {
-      title: 'Memory Puzzle',
-      subtitle: 'PWA hecha con React',
-      keys: ['React', 'JS', 'PWA', 'Redux', 'HeroIcons', 'Sass', 'React-Router'],
-      desc: 'Diseñada usando Framer. Soporte PWA con service worker 100% offline, Code Splitting con React Lazy, Sass (Patron de diseño: Mobile Only), React Router, Deploy en Vercel',
-      link: 'https://memorypuzzle.vercel.app',
-      repo: 'https://github.com/juliofranco9111/ReactMemoryGame',
-      prototype: 'https://framer.com/share/Memory-App--fgLafZi6Vn0vGq1IWttG/wE7wOnE3k'
-
+  {
+    title: 'Memory Puzzle',
+    subtitle: 'PWA hecha con React',
+    keys: ['React', 'JS', 'PWA', 'Redux', 'HeroIcons', 'Sass', 'React-Router'],
+    desc: 'Diseñada usando Framer. Soporte PWA con service worker 100% offline, Code Splitting con React Lazy, Sass (Patron de diseño: Mobile Only), React Router, Deploy en Vercel',
+    link: 'https://memorypuzzle.vercel.app',
+    repo: 'https://github.com/juliofranco9111/ReactMemoryGame',
+    prototype:
+      'https://framer.com/share/Memory-App--fgLafZi6Vn0vGq1IWttG/wE7wOnE3k',
   },
   {
     title: 'Math-Quizz',
     subtitle: 'PWA hecha con Angular',
-    keys: ['Angular', 'JS', 'PWA', 'Guards', 'Offline','Sass'],
+    keys: ['Angular', 'JS', 'PWA', 'Guards', 'Offline', 'Sass'],
     desc: 'PWA con Service Worker y soporte 100% Offline, Code Splitting con Angular Lazy, Sass (Patron de diseño: Mobile Only), Deploy en Vercel',
     link: 'https://math-quizz.vercel.app/',
     repo: 'https://github.com/juliofranco9111/MathQuizz',
@@ -106,9 +106,25 @@ export const projects = [
       'GoogleAuth',
       'Serverless',
     ],
-    desc: 'Permite administrar y separar los ingresos y gastos mensuales por categorías además de ver el balance en tiempo real de los movimientos. Diseñé el logo y nombre para el proyecto, CRUD completo por cada movimiento y categorías, instrucciones de uso integradas, login basado en el sistema de autenticación de Firebase (email y cuenta de Google). Diseño adaptable (responsive).',
+    desc: 'Aplicación para el control de los gastos mensuales, creada con Angular, con sistema de autenticación y base de datos en Firebase. (Usa mail: test@test.com pass: 123456).',
     link: 'https://gastos-app-d4c8f.firebaseapp.com/',
     repo: 'https://github.com/juliofranco9111/gastosApp',
+  },
+  {
+    title: 'Tickets (Turnos)',
+    subtitle: 'Aplicación para el manejo de turnos y lista de espera',
+    keys: ['Node.JS', 'Express', 'Heroku', 'HTMl', 'CSS'],
+    desc: 'Permite el control de turnos, cuenta con una pantalla para mostrar el turno actual y el número de Escritorio al cual acudir',
+    link: 'https://appticketsnodejs.herokuapp.com/',
+    repo: 'https://github.com/juliofranco9111/ticketsnodejs',
+  },
+  {
+    title: 'miChat (Real time)',
+    subtitle: 'Aplicación de Chat en tiempo real',
+    keys: ['Node.JS', 'Express', 'SocketIO', 'HTMl', 'CSS', 'REST'],
+    desc: 'Creada utilizando la librería Socket.IO, NodeJS para el REST Server, posibilidad de crear múltiples salas.',
+    link: 'https://michat-nodejs.herokuapp.com/',
+    repo: 'https://github.com/juliofranco9111/chatowhitsockets',
   },
 ];
 
