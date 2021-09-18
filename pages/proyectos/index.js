@@ -48,10 +48,14 @@ const Index = () => {
             <p>{project.desc}</p>
 
             <p>
+              {project.prototype && (
+                <a target='_blank' rel='noreferrer' href={project.prototype}>
+                  Diseño - {' '}
+                </a>
+              )}
               <a target='_blank' rel='noreferrer' href={project.repo}>
-                Repositorio
+                Repositorio -
               </a>{' '}
-              -
               <a target='_blank' rel='noreferrer' href={project.link}>
                 Demo
               </a>

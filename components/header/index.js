@@ -4,7 +4,6 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 
 const Header = () => {
   const [isSmallScreen] = useMediaQuery('screen and (max-width: 800px)');
-  console.log(isSmallScreen);
   function toggleNavBar() {
     const nav = document.querySelector('#nav');
     nav.classList.toggle('show');

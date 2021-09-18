@@ -1,23 +1,20 @@
 export const contactData = [
   {
-    text: 'cv -',
-    url: 'https://www.google.com',
+    text: 'CV -',
+    url: 'https://drive.google.com/file/d/1GTo7LMfNhoI5aziRa8K7SDXwS_0F_RW0/view',
   },
   {
     text: 'LinkedIn -',
-    url: 'https://www.linkedin.com',
+    url: 'https://www.linkedin.com/in/juliocesarfranco/',
   },
-  {
-    text: 'Gmail -',
-    url: 'https://www.gmail.com',
-  },
+
   {
     text: 'GitHub -',
-    url: 'https://www.github.com',
+    url: 'https://github.com/juliofranco9111',
   },
   {
     text: 'WhatsApp',
-    url: 'https://www.whatsapp.com',
+    url: 'https://wa.me/+541125592459/?text=Hola, quiero ponerme en contacto contigo',
   },
 ];
 
@@ -47,15 +44,18 @@ export const stack = [
   'Sass',
   'JavaScript',
   'TypeScript',
-  'Angular',
-  'RXJS',
   'React',
   'Redux',
+  'Angular',
+  'RXJS',
   'MongoBD',
+  'SQL',
   'Node.JS',
   'Express',
-  'SQL',
   'Dart',
+  'Figma',
+  'Illustrator',
+  'Framer'
 ];
 
 export const projects = [
@@ -69,10 +69,20 @@ export const projects = [
         repo: ''
 
     } */
+    {
+      title: 'Memory Puzzle',
+      subtitle: 'PWA hecha con React',
+      keys: ['React', 'JS', 'PWA', 'Redux', 'HeroIcons', 'Sass', 'React-Router'],
+      desc: 'Diseñada usando Framer. Soporte PWA con service worker 100% offline, Code Splitting con React Lazy, Sass (Patron de diseño: Mobile Only), React Router, Deploy en Vercel',
+      link: 'https://memorypuzzle.vercel.app',
+      repo: 'https://github.com/juliofranco9111/ReactMemoryGame',
+      prototype: 'https://framer.com/share/Memory-App--fgLafZi6Vn0vGq1IWttG/wE7wOnE3k'
+
+  },
   {
     title: 'Math-Quizz',
     subtitle: 'PWA hecha con Angular',
-    keys: ['Angular', 'JS', 'PWA', 'Guards', 'Offline'],
+    keys: ['Angular', 'JS', 'PWA', 'Guards', 'Offline','Sass'],
     desc: 'PWA con Service Worker y soporte 100% Offline, Code Splitting con Angular Lazy, Sass (Patron de diseño: Mobile Only), Deploy en Vercel',
     link: 'https://math-quizz.vercel.app/',
     repo: 'https://github.com/juliofranco9111/MathQuizz',
@@ -80,7 +90,7 @@ export const projects = [
   {
     title: 'Capital-Quizz',
     subtitle: 'PWA hecha con React',
-    keys: ['React', 'JS', 'PWA', 'Redux', 'FontAwesome'],
+    keys: ['React', 'JS', 'PWA', 'FontAwesome', 'Sass'],
     desc: 'PWA con Service Worker y soporte 100% Offline, Code Splitting con React Lazy, Sass (Patron de diseño: Mobile Only), React Router, Deploy en Vercel',
     link: 'https://quizzcapital.vercel.app/',
     repo: 'https://github.com/juliofranco9111/ReactCapitalQuizz',

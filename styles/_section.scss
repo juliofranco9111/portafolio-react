@@ -63,15 +63,14 @@ section {
 #contact {
   .img-container {
     width: 100%;
-    max-width: 100px;
+    max-width: 250px;
+    max-height: 250px;
     margin: 0 auto;
+    margin-bottom:20px;
     border-radius: 999px;
     overflow: hidden;
-    margin-bottom: 20px;
     img {
       display: flex;
-      padding-bottom: 10px;
-      padding-top: 10px;
       height: auto;
       transition: filter 300ms;
       margin: 0 auto;
@@ -117,7 +116,8 @@ section {
         align-content: center;
       }
       .img-container {
-        max-width: 200px;
+        max-width: 500px;
+        max-height: 500px;
       }
     }
   }

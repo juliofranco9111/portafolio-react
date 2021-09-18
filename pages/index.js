@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Img from 'next/image';
 import { contactData } from '../database/database';
-import foto from '../public/foto.png';
+import foto from '../public/foto.webp';
 
 export default function Home() {
-  
-
   return (
     <>
       <Head>
@@ -36,6 +34,7 @@ export default function Home() {
               (Argentina). Desarrollo sitios y aplicaciones web (SPA). Buen
               gusto para el diseño y la funcionalidad
             </p>
+            <br/>
             <p className='urls-contact'>
               {contactData.map((e) => (
                 <a key={e.text} target='blank' href={e.url}>
@@ -43,6 +42,7 @@ export default function Home() {
                 </a>
               ))}
             </p>
+            <p>julio.franco9111@gmail.com </p>
           </div>
         </div>
       </section>
