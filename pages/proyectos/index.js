@@ -36,6 +36,7 @@ const Index = () => {
               <input
                 type='text'
                 name='term'
+                autoComplete='off'
                 placeholder='Busca por tecnología'
                 value={term}
                 onChange={handleInputChange}
