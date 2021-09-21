@@ -32,6 +32,9 @@ section {
       font-size: $h2;
       color: var(--font-color);
       transition:background-color 300ms;
+      &:focus{
+        outline:none;
+      }
     }
   }
   

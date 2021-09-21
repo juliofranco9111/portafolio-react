@@ -56,6 +56,7 @@ export const stack = [
   'Figma',
   'Illustrator',
   'Framer',
+  'Flutter(En progreso)'
 ];
 
 export const projects = [

@@ -74,6 +74,10 @@ const Index = () => {
               </p>
             </article>
           ))}
+          <h2>
+            Más en mi
+            <a href='https://github.com/juliofranco9111' rel="noreferrer" target="_blank"> GitHub...</a>
+          </h2>
         </div>
       </section>
     </>
