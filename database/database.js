@@ -48,7 +48,7 @@ export const stack = [
   'Redux',
   'Angular',
   'RXJS',
-  'MongoBD',
+  'MongoDB',
   'SQL',
   'Node.JS',
   'Express',
