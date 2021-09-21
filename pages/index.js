@@ -1,9 +1,19 @@
 import Head from 'next/head';
 import Img from 'next/image';
+import { useState } from 'react';
 import { contactData } from '../database/database';
 import foto from '../public/foto.webp';
 
 export default function Home() {
+
+  const [showMail, setShowMail] = useState(false)
+
+
+  const handleMail = () => {
+    setShowMail(!showMail)
+  }
+
+
   return (
     <>
       <Head>
@@ -35,8 +45,10 @@ export default function Home() {
                   {e.text}
                 </a>
               ))}
+              <a className="pointer" onClick={handleMail}>
+                {showMail ? <span className="color-black">julio.franco9111@gmail.com</span> : 'Correo'}
+              </a>
             </p>
-            <p>julio.franco9111@gmail.com </p>
           </div>
         </div>
       </section>

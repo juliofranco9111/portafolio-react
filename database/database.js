@@ -13,7 +13,7 @@ export const contactData = [
     url: 'https://github.com/juliofranco9111',
   },
   {
-    text: 'WhatsApp',
+    text: 'WhatsApp -',
     url: 'https://wa.me/+541125592459/?text=Hola, quiero ponerme en contacto contigo',
   },
 ];
