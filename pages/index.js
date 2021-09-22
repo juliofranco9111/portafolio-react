@@ -2,17 +2,17 @@ import Head from 'next/head';
 import Img from 'next/image';
 import { useState } from 'react';
 import { contactData } from '../database/database';
-import foto from '../public/foto.webp';
 
 export default function Home() {
-
-  const [showMail, setShowMail] = useState(false)
-
+  const [showMail, setShowMail] = useState(false);
 
   const handleMail = () => {
-    setShowMail(!showMail)
-  }
-
+    setShowMail(true);
+    navigator.clipboard.writeText('julio.franco9111@gmail.com');
+    setTimeout(() => {
+      setShowMail(false);
+    }, 2000);
+  };
 
   return (
     <>
@@ -28,7 +28,12 @@ export default function Home() {
       <section id='contact'>
         <div className='container'>
           <div className='img-container'>
-            <Img src={foto} alt='foto-personal' />
+            <Img
+              src={`https://drive.google.com/uc?export=download&id=1nvIfVsIMI4OCliPemSay2rf0KBxjwfEw`}
+              width='350'
+              height='450'
+              alt='foto-personal'
+            />
           </div>
           <div className='text-home'>
             <h1 className=''>Julio Franco</h1>
@@ -36,7 +41,7 @@ export default function Home() {
             <p className='mb-1'>
               Soy desarrollador de Javascript, resido en Buenos Aires
               (Argentina). Desarrollo sitios y aplicaciones web (SPA). Buen
-              gusto para el diseño y la funcionalidad.
+              gusto para el diseño sin descuidar la funcionalidad.
             </p>
             <br />
             <p className='urls-contact'>
@@ -45,8 +50,12 @@ export default function Home() {
                   {e.text}
                 </a>
               ))}
-              <a className="pointer" onClick={handleMail}>
-                {showMail ? <span className="color-black">julio.franco9111@gmail.com</span> : 'Correo'}
+              <a className='pointer' onClick={handleMail}>
+                {showMail ? (
+                  '¡Copiado!'
+                ) : (
+                  'Correo'
+                )}
               </a>
             </p>
           </div>
