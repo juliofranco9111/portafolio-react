@@ -75,7 +75,7 @@ export const projects = [
       title: 'Bg-eraser',
       subtitle: 'PWA hecha con React',
       keys: ['React', 'JS', 'PWA', 'API', 'Sass', 'Context'],
-      desc: 'Herramienta para remover el fondo de imágenes a través de la API de PhotoRoom, desarrollada en React. Contenido pre cacheado por el Service Worker para disminuír el tiempo de carga. Se puede seleccionar un color de fondo',
+      desc: 'Herramienta para remover el fondo de imágenes a través de la API de PhotoRoom, desarrollada en React. Instalable, contenido pre cacheado por el Service Worker para disminuír el tiempo de carga. Se puede seleccionar un color de fondo',
       link: 'https://bg-eraser.vercel.app/',
       repo: 'https://github.com/juliofranco9111/React-bg-eraser'
 
