@@ -54,12 +54,12 @@ section {
     flex-wrap: wrap;
     gap: 10px;
     
-    li {
-      width: auto;
+    
       .project-tag {
         font-size: $h2;
+        color:$blue;
       }
-    }
+    
   }
 }
 

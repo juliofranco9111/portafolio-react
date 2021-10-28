@@ -7,16 +7,20 @@ import { useForm } from '../../hooks/useForm';
 import Head from 'next/head';
 
 const Index = () => {
+  let value = '';
   const [projects, setProjects] = useState(allProjects);
-  const [{ term }, handleInputChange] = useForm({ term: '' });
+  const [{ term }, handleInputChange] = useForm({ term: value });
 
   useEffect(() => {
     setProjects(getProjectsFilter(term));
-  }, [term]);
+  }, [term ]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+
+  
 
   return (
     <>
@@ -49,10 +53,8 @@ const Index = () => {
               <h3>{project.subtitle}</h3>
               <ul className='project-tags'>
                 {project.keys.map((key) => (
-                  <li key={key}>
-                    <a className='project-tag' href='#'>
+                  <li className='project-tag' key={key}>
                       #{key}
-                    </a>
                   </li>
                 ))}
               </ul>
