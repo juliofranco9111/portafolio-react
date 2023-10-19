@@ -20,8 +20,13 @@ export const contactData = [
 
 export const work = [
   {
+    company: 'Despegar',
+    job: 'Desarrollador Frontend ( 2022 - Actualidad )',
+    desc: 'Soporte a aplicación de vuelos, creación de componentes e interfaces según indicaciones de diseño',
+  },
+  {
     company: 'Fudo',
-    job: 'Agente de Soporte técnico ( 2020 - Actualidad )',
+    job: 'Agente de Soporte técnico ( 2020 - 2022 )',
     desc: 'Brindo servicio al cliente mientras respondo preguntas, instalo software (y hardware) y soluciono problemas técnicos por teléfono, correo electrónico, chat y otros medios',
   },
 ];
@@ -130,7 +135,7 @@ export const projects = [
     repo: 'https://github.com/juliofranco9111/ticketsnodejs',
   },
   {
-    title: 'miChat (Real time)',
+    title: ' (Real time)',
     subtitle: 'Aplicación de Chat en tiempo real',
     keys: ['Node.JS', 'Express', 'SocketIO', 'HTMl', 'CSS', 'REST'],
     desc: 'Creada utilizando la librería Socket.IO, NodeJS para el REST Server, posibilidad de crear múltiples salas.',
