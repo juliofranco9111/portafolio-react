@@ -20,7 +20,7 @@ export const contactData = [
 
 export const work = [
   {
-    company: 'Despegar',
+    company: 'Despegar.com',
     job: 'Desarrollador Frontend ( 2022 - Actualidad )',
     desc: 'Soporte a aplicación de vuelos, creación de componentes e interfaces según indicaciones de diseño',
   },
